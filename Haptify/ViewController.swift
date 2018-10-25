@@ -83,9 +83,9 @@ extension ViewController:UITableViewDelegate, UITableViewDataSource{
             //--- Older iPhones
             switch indexPath.row {
             case 0:
-                Haptify(.StandardVibration)
+                Haptifyy(feed: .StandardVibration)
             case 1:
-                Haptify(.StandardAlertVibration)
+                Haptifyy(feed: .StandardAlertVibration)
             default:
                 break
             }
@@ -93,15 +93,15 @@ extension ViewController:UITableViewDelegate, UITableViewDataSource{
             //--- Taptic Engine
             switch indexPath.row {
             case 0:
-                Haptify(.Peek)
+                Haptifyy(feed: .Peek)
             case 1:
-                Haptify(.Pop)
+                Haptifyy(feed: .Pop)
             case 2:
-                Haptify(.Cancelled)
+                Haptifyy(feed: .Cancelled)
             case 3:
-                Haptify(.Retry)
+                Haptifyy(feed: .Retry)
             case 4:
-                Haptify(.Failed)
+                Haptifyy(feed: .Failed)
             default:
                 break
             }
@@ -109,11 +109,11 @@ extension ViewController:UITableViewDelegate, UITableViewDataSource{
             //--- UINotificationFeedbackGenerator
             switch indexPath.row {
             case 0:
-                Haptify(.Success)
+                Haptifyy(feed: .Success)
             case 1:
-                Haptify(.Warning)
+                Haptifyy(feed: .Warning)
             case 2:
-                Haptify(.Error)
+                Haptifyy(feed: .Error)
             default:
                 break
             }

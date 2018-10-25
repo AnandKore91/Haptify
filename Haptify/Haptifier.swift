@@ -12,7 +12,7 @@ import AudioToolbox.AudioServices
 
 
 //MARK:- Public Functions
-func Haptify(_ feed:HaptifierMode){
+func Haptifyy(feed:HaptifierMode){
     switch feed {
     case .StandardVibration, .StandardAlertVibration, .Peek, .Pop, .Cancelled, .Retry, .Failed:
         AudioServicesPlaySystemSoundWithCompletion(SystemSoundID(feed.rawValue), {})
