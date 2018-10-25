@@ -9,10 +9,10 @@
 import Foundation
 import UIKit
 
-extension UIDevice {
+public extension UIDevice {
     
     //MARK:- Enums
-    enum DevicePlatform: String {
+    public enum DevicePlatform: String {
         case other = "Old Device"
         case iPhone6S = "iPhone 6S"
         case iPhone6SPlus = "iPhone 6S Plus"
@@ -27,7 +27,7 @@ extension UIDevice {
     }
     
     //MARK:- Variables
-    var platform: DevicePlatform {
+    public var platform: DevicePlatform {
         get {
             var sysinfo = utsname()
             uname(&sysinfo)
@@ -60,7 +60,7 @@ extension UIDevice {
     }
     
     //MARK:- Validators
-    var hasTapticEngine: Bool {
+    public var hasTapticEngine: Bool {
         get {
             return platform == .iPhone6S || platform == .iPhone6SPlus ||
                 platform == .iPhone7 || platform == .iPhone7Plus ||
@@ -70,7 +70,7 @@ extension UIDevice {
         }
     }
     
-    var hasHapticFeedback: Bool {
+    public var hasHapticFeedback: Bool {
         get {
             return platform == .iPhone7 || platform == .iPhone7Plus ||
                 platform == .iPhone8 || platform == .iPhone8Plus ||

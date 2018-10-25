@@ -12,7 +12,7 @@ import AudioToolbox.AudioServices
 
 
 //MARK:- Public Functions
-func Haptifyy(feed:HaptifierMode){
+public func Haptifyy(feed:HaptifierMode){
     switch feed {
     case .StandardVibration, .StandardAlertVibration, .Peek, .Pop, .Cancelled, .Retry, .Failed:
         AudioServicesPlaySystemSoundWithCompletion(SystemSoundID(feed.rawValue), {})
@@ -68,7 +68,7 @@ public class Haptifier{
 
 
 //MARK:- Enums
-enum HaptifierMode:Int{
+public enum HaptifierMode:Int{
     //--- Older iPhone supported
     case StandardVibration = 4095
     case StandardAlertVibration = 1011
@@ -86,7 +86,7 @@ enum HaptifierMode:Int{
     case Error = 2
 }
 
-enum HaptifierImpact:String{
+public enum HaptifierImpact:String{
     case Light = "Light"
     case Medium = "Medium"
     case Heavy = "Heavy"
