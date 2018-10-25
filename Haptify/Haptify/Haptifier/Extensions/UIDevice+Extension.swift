@@ -10,6 +10,8 @@ import Foundation
 import UIKit
 
 extension UIDevice {
+    
+    //MARK:- Enums
     enum DevicePlatform: String {
         case other = "Old Device"
         case iPhone6S = "iPhone 6S"
@@ -24,6 +26,7 @@ extension UIDevice {
         case iPhoneXSMax = "iPhone XS Max"
     }
     
+    //MARK:- Variables
     var platform: DevicePlatform {
         get {
             var sysinfo = utsname()
@@ -56,6 +59,7 @@ extension UIDevice {
         }
     }
     
+    //MARK:- Validators
     var hasTapticEngine: Bool {
         get {
             return platform == .iPhone6S || platform == .iPhone6SPlus ||
