@@ -51,10 +51,13 @@ Play user touch vibration feedback:
 - Haptifyy(feed: .Pop)
 - Haptifyy(feed: .Cancelled)
 - Haptifyy(feed: .Retry)
+```
+
+Notification feedback:
+```
 - Haptifyy(feed: .Success)
 - Haptifyy(feed: .Warning)
 - Haptifyy(feed: .Error)
-
 ```
 
 Or play standard vibrations:
