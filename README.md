@@ -7,7 +7,7 @@ Make your iOS app's user experience better with Haptify. Haptify provides easy A
 iOS 10.0+
 Swift 4.2
 
-##Installation
+## Installation
 CocoaPods is a dependency manager for Cocoa projects. You can install it with the following command:
 ```
 $ gem install cocoapods
@@ -28,7 +28,7 @@ Then, run the following command:
 $ pod install
 ```
 
-##Using Haptify
+## Using Haptify
 Import Haptify module as follows:
 ```
 import Haptify
