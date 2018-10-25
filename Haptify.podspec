@@ -15,6 +15,6 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "10.0"
   s.swift_version = "4.2"
   s.source       = { :git => "https://github.com/AnandKore91/Haptify.git", :tag => "#{s.version}" }
-  s.source_files  = "Haptify/Haptify/Haptifier/*", "Haptify/Haptify/Haptifier/**/*.{h,m}"
+  s.source_files  = "Haptify/Haptifier.swift", "Haptify/UIDevice+Extension.swift"
 
 end

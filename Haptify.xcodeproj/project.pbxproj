@@ -12,8 +12,8 @@
 		0C58485B2181BD8400089F20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C5848592181BD8400089F20 /* Main.storyboard */; };
 		0C58485D2181BD8600089F20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C58485C2181BD8600089F20 /* Assets.xcassets */; };
 		0C5848602181BD8700089F20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C58485E2181BD8700089F20 /* LaunchScreen.storyboard */; };
-		0C5848692181BDD800089F20 /* UIDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5848682181BDD800089F20 /* UIDevice+Extension.swift */; };
-		0C58486C2181BE3600089F20 /* Haptifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C58486B2181BE3600089F20 /* Haptifier.swift */; };
+		0C5848702181EBF200089F20 /* Haptifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C58486E2181EBF100089F20 /* Haptifier.swift */; };
+		0C5848712181EBF200089F20 /* UIDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C58486F2181EBF200089F20 /* UIDevice+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,8 +24,8 @@
 		0C58485C2181BD8600089F20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C58485F2181BD8700089F20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C5848612181BD8700089F20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0C5848682181BDD800089F20 /* UIDevice+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+Extension.swift"; sourceTree = "<group>"; };
-		0C58486B2181BE3600089F20 /* Haptifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Haptifier.swift; sourceTree = "<group>"; };
+		0C58486E2181EBF100089F20 /* Haptifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Haptifier.swift; sourceTree = "<group>"; };
+		0C58486F2181EBF200089F20 /* UIDevice+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,29 +58,13 @@
 		0C5848542181BD8400089F20 /* Haptify */ = {
 			isa = PBXGroup;
 			children = (
+				0C58486E2181EBF100089F20 /* Haptifier.swift */,
+				0C58486F2181EBF200089F20 /* UIDevice+Extension.swift */,
 				0C5848552181BD8400089F20 /* AppDelegate.swift */,
 				0C5848572181BD8400089F20 /* ViewController.swift */,
 				0C58486D2181BE7400089F20 /* SupportedFiles */,
-				0C58486A2181BE0800089F20 /* Haptifier */,
 			);
 			path = Haptify;
-			sourceTree = "<group>";
-		};
-		0C5848672181BDB900089F20 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				0C5848682181BDD800089F20 /* UIDevice+Extension.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		0C58486A2181BE0800089F20 /* Haptifier */ = {
-			isa = PBXGroup;
-			children = (
-				0C58486B2181BE3600089F20 /* Haptifier.swift */,
-				0C5848672181BDB900089F20 /* Extensions */,
-			);
-			path = Haptifier;
 			sourceTree = "<group>";
 		};
 		0C58486D2181BE7400089F20 /* SupportedFiles */ = {
@@ -166,8 +150,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C5848582181BD8400089F20 /* ViewController.swift in Sources */,
-				0C5848692181BDD800089F20 /* UIDevice+Extension.swift in Sources */,
-				0C58486C2181BE3600089F20 /* Haptifier.swift in Sources */,
+				0C5848712181EBF200089F20 /* UIDevice+Extension.swift in Sources */,
+				0C5848702181EBF200089F20 /* Haptifier.swift in Sources */,
 				0C5848562181BD8400089F20 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
